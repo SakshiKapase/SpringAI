@@ -1,0 +1,141 @@
+/* 🌟 App Container */
+.App {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  text-align: center;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(135deg, #f8f9fa, #eef3f7);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 🌟 Tab Buttons Container */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+/* 🌟 Common Button Styles */
+button {
+  padding: 12px 24px;
+  cursor: pointer;
+  border: none;
+  background: #e0e0e0;
+  font-weight: bold;
+  color: #333;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+/* Active Tab Button */
+button.active {
+  background: linear-gradient(135deg, #007bff, #0056d2);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+/* Hover Effect */
+button:hover {
+  background: #d6d6d6;
+  transform: translateY(-2px);
+}
+
+/* 🌟 Input Fields */
+input, select {
+  padding: 12px;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus Effect on Input */
+input:focus, select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* 🌟 Tab Content Container */
+.tab-content {
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* 🌟 Image Grid for Generated Images */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Image Hover Effect */
+img:hover {
+  transform: scale(1.05);
+  border-color: #007bff;
+}
+
+/* Empty Image Slot */
+.empty-image-slot {
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+  border: 2px dashed #bbb;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+/* 🌟 Output Box */
+.output {
+  margin-top: 20px;
+  background: #fff8f8;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ffdddd;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  box-shadow: 0 3px 8px rgba(255, 100, 100, 0.1);
+}
+
+/* 🌟 Recipe/Meal Text */
+.recipe-text, .meal-plan-text {
+  max-width: 100%;
+  padding: 12px;
+  word-wrap: break-word;
+  overflow-y: auto;
+  font-size: 15px;
+  line-height: 1.6;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Smooth Scroll for Long Text */
+.recipe-text::-webkit-scrollbar, 
+.meal-plan-text::-webkit-scrollbar {
+  width: 8px;
+}
+.recipe-text::-webkit-scrollbar-thumb,
+.meal-plan-text::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 5px;
+}
